@@ -1,0 +1,19 @@
+.b-experience {
+
+    &--name {
+        font-size: 1rem;
+        color: #0DFDD7;
+    }
+
+    &--where {
+        font-size: .8rem;
+    }
+
+    &--date {
+        font-size: .7rem;
+    }
+}
+
+.b-experience-container {
+    min-width: 85%;
+}

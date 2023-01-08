@@ -26,14 +26,14 @@ const Home = () => {
        
         <div className='b-home__main'> 
           <h1 className='b-home__title'>
-          <AnimatedLetters letterClass={letterClass} strArary={welcome1} idx={7}></AnimatedLetters>
+            <AnimatedLetters letterClass={letterClass} strArary={welcome1} idx={7}></AnimatedLetters>
           <br/>
-          <AnimatedLetters letterClass={letterClass} strArary={welcome2} idx={12}></AnimatedLetters>
-          <AnimatedLetters letterClass={letterClass} strArary={nameArray} idx={15}></AnimatedLetters>
+            <AnimatedLetters letterClass={letterClass} strArary={welcome2} idx={12}></AnimatedLetters>
+            <AnimatedLetters letterClass={letterClass} strArary={nameArray} idx={15}></AnimatedLetters>
           <br />
-          <AnimatedLetters letterClass={letterClass} strArary={jobArray} idx={21}></AnimatedLetters>
+            <AnimatedLetters letterClass={letterClass} strArary={jobArray} idx={21}></AnimatedLetters>
           </h1>
-          <Link to="/contact" className='b-home__link'>HABLEMOS</Link>
+            <Link to="/contact" className='b-home__link'>HABLEMOS</Link>
         </div>
       </div>
 

@@ -1,0 +1,168 @@
+.b-contact {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: whitesmoke;
+        width: 100%;
+        min-height: 100vh;
+        font-size: 1.4rem;
+        font-family: "Helvetica Neue";
+    }   
+    
+    &__main {
+        padding: 60px 0;
+    }
+    
+    &__title {
+        margin-left: 20px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::before {
+            content: "<h2>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</h2>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+    }
+
+    &__parraf {
+        font-size: 1rem;
+
+        &::before {
+            content: "<p>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</p>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &--container {
+            width: 70%;
+            margin-left: 30px;
+            animation: fadeIn 2s 1.5s backwards;
+        }
+    }
+    
+    &__main {
+        font-size: 1.4rem;
+        font-family: "Helvetica Neue";
+        margin-left: 20px;
+    }
+
+    &__span {
+        color: #0DFDD7;
+        font-weight: bold;
+        animation: fadeIn 2s 2s backwards;
+
+        &--strong {
+            font-family: "La Belle Aurore";
+            animation: fadeIn 2s 1.5s backwards;
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+    }
+
+    &__list {
+        
+        margin-left: 20px;
+        animation: fadeIn 2s 1.5s backwards;
+
+        &::before {
+            content: "<ul className='b-contact__list'>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</ul>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        li {
+            list-style: none;
+            font-size: .7rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &::before {
+                content: "<li>";
+                font-family: "La Belle Aurore";
+                font-size: .8rem;
+                color: grey;
+                opacity: .6;
+            }
+    
+            &::after {
+                content: "</li>";
+                font-family: "La Belle Aurore";
+                font-size: .8rem;
+                color: grey;
+                opacity: .6;
+            }
+
+            &:hover {
+                transition:  1s;
+                color: #0DFDD7;
+                cursor: pointer;
+            }
+        }
+
+    }
+   
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+.text-animate__hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #0DFDD7;
+        cursor: pointer;
+    }
+}
+
+@for $i from 1 through 45 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i /10}s;
+    }
+}

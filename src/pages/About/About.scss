@@ -63,6 +63,13 @@
         }
     }
 
+    &__education {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__list {
         
         margin-left: 20px;
@@ -113,6 +120,30 @@
                 cursor: pointer;
             }
         }
+
+    }
+
+    &__buttons {   
+            
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        &::before {
+            content: "<div className='b-buttons'>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</div>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
     }
 
     &__span {
@@ -153,6 +184,10 @@
             transition: .7s ease-in;
         }
     }
+
+    &__education {
+        margin-bottom: 50px;
+    }
 }
 
 .text-animate {
@@ -180,3 +215,17 @@
         animation-delay: #{$i /10}s;
     }
 }
+
+.b-about__buttons--btn {
+    background-color: #1D1D1D;
+    color: #0DFDD7;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    border: 1px solid #0DFDD7;
+    padding: 10px;
+    width: 40%;
+    margin: 10px;
+    animation: fadeIn 2s 2.3s backwards;
+    cursor: pointer;
+} 
