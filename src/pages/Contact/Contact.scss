@@ -2,14 +2,14 @@
 
     &__container {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
         color: whitesmoke;
         width: 100%;
         min-height: 100vh;
         font-size: 1.4rem;
         font-family: "Helvetica Neue";
+        margin-left: 20px;
+        padding: 60px 0;
     }   
     
     &__main {
@@ -42,7 +42,7 @@
 
     &__parraf {
         font-size: 1rem;
-
+        line-height: 25px;
         &::before {
             content: "<p>";
             font-family: "La Belle Aurore";

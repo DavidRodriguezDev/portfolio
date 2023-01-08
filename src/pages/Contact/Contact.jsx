@@ -22,18 +22,19 @@ const Contact = () => {
         <AnimatedLetters letterClass={letterClass} strArary={contact} idx={1}></AnimatedLetters>
       </h2>
       <div className='b-contact__parraf--container'>
-        <p className='b-contact__parraf'>¿Colaboramos juntos? <span className='b-contact__span--strong'>&lt;strong&gt;</span><span className='b-contact__span'>¡Hablemos!</span><span className='b-contact__span--strong'>&lt;/strong&gt;</span></p>
+        <p className='b-contact__parraf'>Ahora que ya conoces un poco más sobre mi, ¿Colaboramos juntos? <span className='b-contact__span--strong'>&lt;strong&gt;</span><span className='b-contact__span'>¡Hablemos!</span><span className='b-contact__span--strong'>&lt;/strong&gt;</span></p>
       </div>
       <div className="b-contact__list">
-            <ul>
-              <li>
-                <p>{hero.phone}</p>
-              </li>
-              <li>
-                <p>{hero.email}</p>
-              </li>
-            </ul>
-          </div> 
+        <ul>
+          <li>
+            <p>{hero.phone}</p>
+          </li>
+          <li>
+            <p>{hero.email}</p>
+          </li>
+        </ul>
+      </div>
+       
     </div>
   )
 }

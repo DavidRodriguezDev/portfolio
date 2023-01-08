@@ -2,7 +2,6 @@ import React from 'react'
 import "./Education.scss"
 
 const Education = ({education}) => {
-    console.log(education);
   return (
         <div className='b-education-container'>
             <div className='b-education-card'>

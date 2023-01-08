@@ -6,6 +6,8 @@ import { faHtml5, faCss3, faJs, faReact, faAngular, faNode, faPhp, faSymfony, fa
 import { CV } from '../../cv/cv';
 import Experience from '../../components/Experience/Experience';
 import Education from '../../components/Education/Education';
+import Menu from '../../components/Menu/Menu';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const About = () => {
@@ -17,6 +19,7 @@ const About = () => {
   const experience = ["E", "x", "p" ,"e", "r", "i", "e", "n", "c", "i", "a"];
   const [showEducation, setShowEducation] = useState(true);
   const {educationn, experiencee} = CV;
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     
@@ -28,7 +31,11 @@ const About = () => {
 
   return (
     <div className='b-about__container'>
+        {showMenu ? <Menu></Menu> : 
         <div className='b-about__main'> 
+          <div className='b-home__button'>
+                <FontAwesomeIcon icon={faBars} onClick={() => (setShowMenu(!showMenu))}></FontAwesomeIcon>
+            </div>
           <h2 className='b-about__title'>
             <AnimatedLetters letterClass={letterClass} strArary={about} idx={1}></AnimatedLetters>
           </h2>
@@ -92,7 +99,7 @@ const About = () => {
               </li>
             </ul>
           </div> 
-        </div>
+        </div>}
       </div>
 
   )

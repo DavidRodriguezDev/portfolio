@@ -1,6 +1,5 @@
 import './App.scss';
 import {Route, Routes} from "react-router-dom"
-import Layout from './components/Layout/Layout';
 import 'animate.css';
 import About from './pages/About/About';
 import Projects from './pages/Projects/Projects';
