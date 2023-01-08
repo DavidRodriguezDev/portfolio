@@ -1,0 +1,80 @@
+.b-home {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        min-height: 100vh;
+    }    
+    
+    &__title {
+        margin-left: 20px;
+
+        &::before {
+            content: "<h1>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</h1>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+    }
+
+    &__main {
+        font-size: 1rem;
+        font-family: "Helvetica Neue";
+        margin-left: 20px;
+    }
+
+    &__link {
+        background-color: #1D1D1D;
+        color: #0DFDD7;
+        font-size: 1rem;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+        border: 1px solid #0DFDD7;
+        padding: 10px;
+        margin-left: 20px;
+        animation: fadeIn 2s 4.3s backwards;
+
+        &:hover {
+            background-color: #0DFDD7;
+            color: whitesmoke;
+            
+            transition: .7s ease-in;
+        }
+    }
+}
+
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+}
+
+.text-animate__hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #0DFDD7;
+        cursor: pointer;
+    }
+}
+
+@for $i from 1 through 45 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i /10}s;
+    }
+}

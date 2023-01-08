@@ -1,0 +1,50 @@
+.b-sidebar {
+    background-color: #181818;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Helvetica Neue";
+
+    &__logo {
+        width: 100px;
+        height: auto;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__rrss {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100px;
+        
+        & a {
+            font-size: 20px;
+        }
+    }
+}
+
+.b-link__home,
+.b-link__about,
+.b-link__contact,
+.b-link__project {
+    font-size: 15px;
+    text-decoration: none;
+    color: #8D8D8D;
+
+    &:hover {
+        color: #0DFDD7;
+    }
+}
+a.active {
+    color: #0DFDD7;
+    ;
+}
