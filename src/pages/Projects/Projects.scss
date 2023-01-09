@@ -11,9 +11,70 @@
     &__main {
         font-size: 1.4rem;
         font-family: "Helvetica Neue";
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        animation: fadeIn 2s 1.8s backwards;
+        font-size: .8rem;
+        font-family: "Helvetica Neue";
+
+        &::before {
+            content: "<ul className='b-projects_list'>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</ul>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+    }
+
+    &__item {
+
+        &::before {
+            content: "<li>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &::after {
+            content: "</li>";
+            font-family: "La Belle Aurore";
+            font-size: .8rem;
+            color: grey;
+            opacity: .6;
+        }
+
+        &--spans {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &--span {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+
+        &--repository a{
+            margin-left: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+
     &__title {
         margin-left: 20px;
 

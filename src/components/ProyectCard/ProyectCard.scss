@@ -1,0 +1,30 @@
+.b-card {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    border-radius:  0 0 3px 3px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 1rem;
+
+    &:hover a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.react {
+    border-top: 3px solid #61DBFB;
+}
+
+.node {
+    border-top: 3px solid #91C63D;
+}
+
+.js {
+    border-top: 3px solid #F7E018;
+}
+.angular {
+    border-top : 3px solid #DD2A30;
+}

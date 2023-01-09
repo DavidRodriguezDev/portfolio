@@ -1,0 +1,26 @@
+.b-scrolldown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 370px;
+    animation: fadeIn 2s 4.3s backwards;
+    
+    &__span {
+        writing-mode: vertical-lr;
+        animation: animate 1.5s linear infinite;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

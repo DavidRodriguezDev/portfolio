@@ -5,9 +5,10 @@
         flex-direction: column;
         color: whitesmoke;
         width: 100%;
-        min-height: 100vh;
+        min-height: auto;
         font-size: 1.4rem;
         font-family: "Helvetica Neue";
+        margin-bottom: 40px;
     }   
     
     &__main {
@@ -133,6 +134,11 @@
                 color: #0DFDD7;
                 cursor: pointer;
             }
+
+            & a {
+                text-decoration: none;
+                color: whitesmoke;
+            } 
         }
 
     }

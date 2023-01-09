@@ -32,11 +32,10 @@ const Contact = () => {
             <p>{hero.phone}</p>
           </li>
           <li>
-            <p>{hero.email}</p>
+            <a href="mailto:contacto.davidrodriguezdiaz@gmail.com">{hero.email}</a>
           </li>
         </ul>
       </div>
-       
     </div>
   )
 }
