@@ -2,15 +2,14 @@
 
     &__container {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         color: whitesmoke;
         width: 100%;
         min-height: 100vh;
     }   
     
     &__main {
-        padding: 60px 0;
+        padding: 10px 0;
     }
     
     &__title {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AnimatedLetters from '../../components/AnimatedLetters/AnimatedLetters';
 import "./Contact.scss"
 import { CV } from '../../cv/cv';
+import Menu from '../../components/Menu/Menu';
 
 const Contact = () => {
 
@@ -18,11 +19,12 @@ const Contact = () => {
 
   return (
     <div className='b-contact__container'>
+      <Menu></Menu>
       <h2 className='b-contact__title'>
         <AnimatedLetters letterClass={letterClass} strArary={contact} idx={1}></AnimatedLetters>
       </h2>
       <div className='b-contact__parraf--container'>
-        <p className='b-contact__parraf'>Ahora que ya conoces un poco más sobre mi, ¿Colaboramos juntos? <span className='b-contact__span--strong'>&lt;strong&gt;</span><span className='b-contact__span'>¡Hablemos!</span><span className='b-contact__span--strong'>&lt;/strong&gt;</span></p>
+        <p className='b-contact__parraf'>Ahora que ya conoces un poco más sobre mi, ¿Trabajamos juntos? <span className='b-contact__span--strong'>&lt;strong&gt;</span><span className='b-contact__span'>¡Hablemos!</span><span className='b-contact__span--strong'>&lt;/strong&gt;</span></p>
       </div>
       <div className="b-contact__list">
         <ul>

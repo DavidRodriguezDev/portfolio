@@ -27,11 +27,8 @@ const Home = () => {
   return (
     
       <div className='b-home__container'>
-        {showMenu ? <Menu></Menu> :
+        <Menu></Menu> 
         <div className='b-home__main'>
-            <div className='b-home__button'>
-                <FontAwesomeIcon icon={faBars} onClick={() => (setShowMenu(!showMenu))}></FontAwesomeIcon>
-            </div> 
           <h1 className='b-home__title'>
             <AnimatedLetters letterClass={letterClass} strArary={welcome1} idx={7}></AnimatedLetters>
           <br/>
@@ -41,7 +38,7 @@ const Home = () => {
             <AnimatedLetters letterClass={letterClass} strArary={jobArray} idx={21}></AnimatedLetters>
           </h1>
             <Link to="/contact" className='b-home__link'>HABLEMOS</Link>
-        </div>}
+        </div>
       </div>
 
   )

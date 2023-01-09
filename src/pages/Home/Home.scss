@@ -2,8 +2,6 @@
 
     &__container {
         display: flex;
-        align-items: center;
-        justify-content: center;
         color: whitesmoke;
         min-height: 100vh;
         flex-direction: column;
@@ -33,6 +31,9 @@
         font-size: 1rem;
         font-family: "Helvetica Neue";
         margin-left: 20px;
+        position: absolute;
+        margin: 0 auto;
+        top: 40%;
     }
 
     &__link {
