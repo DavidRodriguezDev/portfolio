@@ -6,12 +6,7 @@
     margin-bottom: 30px;
     color: black;
     font-size: 1rem;
-
-    &:hover a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    box-shadow: 2px 2px 3px grey;
 }
 
 .react {
@@ -27,4 +22,19 @@
 }
 .angular {
     border-top : 3px solid #DD2A30;
+}
+
+@media(min-width:768px) {
+    
+    .b-card {
+        width: 400px;
+        height: 250px;
+        background-color: #fff;
+        border-radius:  0 0 3px 3px;
+        margin-bottom: 30px;
+        color: black;
+        font-size: 1rem;
+        box-shadow: 2px 2px 3px grey;
+    
+    }
 }

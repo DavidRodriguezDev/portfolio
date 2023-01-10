@@ -13,3 +13,24 @@
         font-size: .7rem;
     }
 }
+
+.b-experience-container {
+    width: 85%;
+}
+
+@media(min-width:768px) {
+    .b-education {
+
+        &--name {
+            font-size: 1.2rem;
+        }
+    
+        &--where {
+            font-size: 1rem;
+        }
+    
+        &--date {
+            font-size: .9rem;
+        }
+    }
+}

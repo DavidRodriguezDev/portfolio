@@ -40,7 +40,9 @@ const Home = () => {
 
     <>
       <div className='b-home__container'> {/*APARTADO HOME*/}
-        <Menu></Menu> 
+        <nav>
+          <Menu></Menu> 
+        </nav> 
         <div className='b-home__main'>
           <h1 className='b-home__title'>
             <AnimatedLetters letterClass={letterClass} strArary={welcome1} idx={7}></AnimatedLetters>
@@ -54,6 +56,7 @@ const Home = () => {
           <ScrollArrow></ScrollArrow>
         </div>
         </div>
+        <section className='total'>
         <div className='b-about__container'> {/*APARTADO SOBRE MI*/}
           <div className='b-about__main'> 
             <h2 className='b-about__title'>
@@ -286,6 +289,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
+        </section>
     </>
 
   )

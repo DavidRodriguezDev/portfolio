@@ -84,6 +84,85 @@
 
 @for $i from 1 through 45 {
     .text-animate._#{$i} {
-        animation-delay: #{$i /10}s;
+        animation-delay: calc($i /10)s;
+    }
+}
+
+
+@media(min-width:768px) {
+    
+    .b-home {
+
+        &__container {
+            align-items: center;
+        } 
+           
+        &__title {
+            margin-left: 0;
+    
+            &::before {
+                content: "<h1>";
+                font-family: "La Belle Aurore";
+                font-size: 1.5rem;
+                color: grey;
+                opacity: .6;
+            }
+    
+            &::after {
+                content: "</h1>";
+                font-family: "La Belle Aurore";
+                font-size: 1.5rem;
+                color: grey;
+                opacity: .6;
+            }
+        }
+    
+        &__main {
+            font-size: 2.3rem;
+            font-family: "Helvetica Neue";
+            margin-left: 100px;
+            position: absolute;
+            margin: 0 auto;
+            top: 30%;
+        }
+    
+        &__link {
+            background-color: #1D1D1D;
+            color: #0DFDD7;
+            font-size: 1.5rem;
+            letter-spacing: 1.4px;
+            text-decoration: none;
+            border: 1px solid #0DFDD7;
+            padding: 10px;
+            animation: fadeIn 2s 4.3s backwards;
+    
+            &:hover {
+                background-color: #0DFDD7;
+                color: whitesmoke;
+                
+                transition: .7s ease-in;
+            }
+        }
+    
+        &__button {
+            position: absolute;
+            top: 40px;
+            left: 15%;
+        }
+    }  
+    
+    .b-home__title,
+    .b-about__title,
+    .b-projects__title,
+    .b-contact__title {
+        font-size: 3.4rem;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }

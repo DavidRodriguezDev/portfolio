@@ -8,7 +8,7 @@
         min-height: auto;
         font-size: 1.4rem;
         font-family: "Helvetica Neue";
-        margin: 40px 0;
+        margin-bottom: 60px;
     }   
     
     &__main {
@@ -167,6 +167,76 @@
 
 @for $i from 1 through 45 {
     .text-animate._#{$i} {
-        animation-delay: #{$i /10}s;
+        animation-delay: calc($i /10)s;
+    }
+}
+
+@media(min-width:768px) {
+    .b-contact {
+
+        &__container {
+            align-items: center;
+        }
+
+        &__title {
+            margin-left: 0px;
+    
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__parraf {
+            font-size: 1.2rem;
+            line-height: 25px;
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+    
+            &--container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 30px;
+                animation: fadeIn 2s 1.5s backwards;
+            }
+        }
+
+        &__title {
+            margin-left: 0;
+        }
+
+        &__list {
+    
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+    
+            li {
+                
+                font-size: 1.2rem;
+               
+                &::before {
+                    font-size: 1.5rem;
+                }
+        
+                &::after {
+                    font-size: 1.5rem;
+                }
+
+            }
+        }
     }
 }

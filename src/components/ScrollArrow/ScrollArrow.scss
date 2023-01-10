@@ -24,3 +24,10 @@
         transform: translateY(0);
     }
 }
+
+@media(min-width:768px) {
+    .b-scrolldown {
+        top: 130%;
+        font-size: 1.4rem;
+    }
+}

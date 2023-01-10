@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ProyectCard.scss"
 
-const ProyectCard = ({border}) => {
+const ProyectCard = ({border, img}) => {
   return (
-    <div className={`b-card ${border}`}>
+    <div className={`b-card ${border} ${img}`}>
         
     </div>
   )

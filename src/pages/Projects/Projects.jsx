@@ -21,7 +21,9 @@ const Projects = () => {
 
   return (
     <div className='b-projects__container'> 
-      <Menu></Menu>      
+      <nav>
+          <Menu></Menu> 
+      </nav>      
       <div className='b-projects__main'>
         <h2 className='b-projects__title'>
           <AnimatedLetters letterClass={letterClass} strArary={projects} idx={1}></AnimatedLetters>
@@ -30,7 +32,7 @@ const Projects = () => {
       <div className='b-projects__cards'>
         <div className='b-projects__item'>
           <h2>CHICAGO´S SPEAKEASY</h2>
-          <ProyectCard border={"react"}></ProyectCard>
+          <ProyectCard border={"react"} img={"speakeasy"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>

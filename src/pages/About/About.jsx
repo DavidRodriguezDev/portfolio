@@ -28,7 +28,9 @@ const About = () => {
 
   return (
     <div className='b-about__container'>
-        <Menu></Menu> 
+        <nav>
+          <Menu></Menu> 
+        </nav>
         <div className='b-about__main'> 
           <h2 className='b-about__title'>
             <AnimatedLetters letterClass={letterClass} strArary={about} idx={1}></AnimatedLetters>

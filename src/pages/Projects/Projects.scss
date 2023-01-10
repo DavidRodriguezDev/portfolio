@@ -124,3 +124,66 @@
         animation-delay: #{$i /10}s;
     }
 }
+
+@media(min-width:768px) {
+    .b-projects {
+        
+        &__container {
+            align-items: center;
+        }
+
+        &__title {
+            margin-left: 0px;
+    
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__cards {
+            font-size: 1.1rem;
+            font-family: "Helvetica Neue";
+    
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+
+        &__item {
+
+            &::before {
+                font-size: 1.5rem;
+            }
+    
+            &::after {
+                font-size: 1.5rem;
+            }
+    
+            &--spans {
+                display: flex;
+                justify-content: flex-start;
+            }
+    
+            &--span {
+                font-size: 25px;
+            }
+    
+            &--repository a{
+                margin-left: 20px;
+                font-size: 20px;
+                text-decoration: none;
+                color: whitesmoke;
+            }
+        }
+    }
+
+    
+}

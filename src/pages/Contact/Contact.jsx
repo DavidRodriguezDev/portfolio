@@ -19,7 +19,9 @@ const Contact = () => {
 
   return (
     <div className='b-contact__container'>
-      <Menu></Menu>
+      <nav>
+          <Menu></Menu> 
+      </nav>
       <h2 className='b-contact__title'>
         <AnimatedLetters letterClass={letterClass} strArary={contact} idx={1}></AnimatedLetters>
       </h2>
