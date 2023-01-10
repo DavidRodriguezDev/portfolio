@@ -53,7 +53,7 @@ const Home = () => {
             <AnimatedLetters letterClass={letterClass} strArary={jobArray} idx={21}></AnimatedLetters>
           </h1>
             <Link to="/contact" className='b-home__link'>HABLEMOS</Link>
-          <ScrollArrow></ScrollArrow>
+            <ScrollArrow></ScrollArrow>
         </div>
       </div>
         <section className='total'>
