@@ -55,7 +55,7 @@ const Home = () => {
             <Link to="/contact" className='b-home__link'>HABLEMOS</Link>
           <ScrollArrow></ScrollArrow>
         </div>
-        </div>
+      </div>
         <section className='total'>
         <div className='b-about__container'> {/*APARTADO SOBRE MI*/}
           <div className='b-about__main'> 
