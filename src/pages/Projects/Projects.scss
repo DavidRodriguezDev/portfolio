@@ -67,12 +67,19 @@
             margin-left: 20px;
         }
 
-        &--repository a{
+        &--repository {
+
+            animation: animate2 1.5s linear infinite;
+            & a{
             margin-left: 20px;
             font-size: 20px;
             text-decoration: none;
             color: whitesmoke;
         }
+        }
+        
+        
+        
     }
 
     &__title {
@@ -99,6 +106,20 @@
         }
     }
 }
+
+
+@keyframes animate2 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .text-animate {
     display: inline-block;
     opacity: 0;
