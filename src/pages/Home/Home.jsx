@@ -133,7 +133,7 @@ const Home = () => {
       <div className='b-projects__cards'>
         <div className='b-projects__item'>
           <h2>CHICAGO´S SPEAKEASY</h2>
-          <ProyectCard border={"react"}></ProyectCard>
+          <ProyectCard border={"react"} img={"/images/speakeasy.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
@@ -150,7 +150,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>METTTALENT</h2>
-          <ProyectCard border={"react"}></ProyectCard>
+          <ProyectCard border={"react"} img={"/images/meettalent.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
@@ -167,7 +167,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>GAME OF THRONES</h2>
-          <ProyectCard border={"react"}></ProyectCard>
+          <ProyectCard border={"react"} img={"/images/got.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
@@ -183,7 +183,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>API COCTELERÍA</h2>
-          <ProyectCard border={"node"}></ProyectCard>
+          <ProyectCard border={"node"} img={"/images/bbddcocteleria.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faJs} color="#F7E018"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faNode} color="#91C63D"/></div>
@@ -197,7 +197,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>API PROTECTORA</h2>
-          <ProyectCard border={"node"}></ProyectCard>
+          <ProyectCard border={"node"} img={"/images/bbddcocteleria.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faJs} color="#F7E018"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faNode} color="#91C63D"/></div>
@@ -211,7 +211,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>API ENTERPRISES</h2>
-          <ProyectCard border={"node"}></ProyectCard>
+          <ProyectCard border={"node"} img={"/images/bbddcocteleria.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faJs} color="#F7E018"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faNode} color="#91C63D"/></div>
@@ -225,7 +225,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>SHOPEAME</h2>
-          <ProyectCard border={"angular"}></ProyectCard>
+          <ProyectCard border={"angular"} img={"/images/shopeame.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
           <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
@@ -241,7 +241,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>POKEAPI</h2>
-          <ProyectCard border={"js"}></ProyectCard>
+          <ProyectCard border={"js"} img={"/images/pokeapi.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
@@ -256,7 +256,7 @@ const Home = () => {
         </div>
         <div className='b-projects__item'>
           <h2>TO DO LIST</h2>
-          <ProyectCard border={"js"}></ProyectCard>
+          <ProyectCard border={"js"} img={"/images/todo.png"}></ProyectCard>
           <div className='b-projects__item--spans'>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faHtml5} color="#F45320"/></div>
             <div className='b-projects__item--span'><FontAwesomeIcon icon={faCss3} color="#2177FF"/></div>
